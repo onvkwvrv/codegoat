@@ -42,7 +42,8 @@ jobs:
           --api-key "${CORTEX_API_KEY}" \
           --api-key-id "${CORTEX_API_KEY_ID}" \
           code scan \
-          --directory "${{github.workspace}}" \
-          --repo-id "cortex-codegoat-dev" \
-          --source "GITHUB_ACTIONS" \
+          --directory . \
+          --repo-id onvkwvrv/cortex-codegoat-dev \
+          --branch dev
+          --source "CLI" \
           --create-repo-if-missing
